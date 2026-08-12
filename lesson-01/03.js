@@ -13,6 +13,3 @@ while (count<20) {
   if (count % 2 === 1) {
     sum += count
   }
-
-  console.log(count + ": " + sum)
-}
