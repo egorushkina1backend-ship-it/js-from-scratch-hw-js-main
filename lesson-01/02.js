@@ -12,4 +12,4 @@ let count=0
 while(count<10) {
   count=count+1
   factorial=factorial*count
-console.log(count+ ": "+ factorial)
+console.log(count+ ": "+ factorial)}

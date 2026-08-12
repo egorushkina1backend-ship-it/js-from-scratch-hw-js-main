@@ -8,4 +8,4 @@ let sum =0
 
 while (count<20) {count= count+1
     sum= sum+count
-    console.log(count+ ":"+ sum)
+    console.log(count+ ":"+ sum)}
