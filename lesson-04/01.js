@@ -1,5 +1,7 @@
 /*
-Напишите функцию `includesElement`, которая принимает массив и элемент, а затем возвращает булево значение, указывающее, содержится ли данный элемент в массиве. Для перебора элементов используйте цикл `for`.
+Напишите функцию `includesElement`, которая принимает массив и элемент,
+ а затем возвращает булево значение, указывающее, содержится ли данный элемент в массиве.
+  Для перебора элементов используйте цикл `for`.
 
 Входные данные:
 - `array`: Массив, в котором нужно проверить наличие элемента. Массив может содержать любые типы данных.
@@ -13,4 +15,22 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-function includesElement() {}
+function includesElement(array, element) {
+     let result;
+    for(let i = 0; i < array.length; i++ ) {
+        const mistery = array[i]
+
+
+        if (mistery===element) {
+            result = true
+            break;
+        } else {
+            result = false
+        }
+    }
+console.log(result)
+    return result
+}
+
+// includesElement ( [2,6,0,15], 2)
+
