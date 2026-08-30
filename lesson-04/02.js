@@ -8,11 +8,42 @@
 **Выходные данные:**
 
 - Массив, содержащий только уникальные элементы из исходного массива.
-
 **Пример использования:**
 `findUniqueElements([1, 2, 3, 2, 1, 4])` вернёт `[1, 2, 3, 4]`.
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
 
-function findUniqueElements() {}
+function includesElement(array, element) {
+     let result;
+    for(let i = 0; i < array.length; i++ ) {
+        const mistery = array[i]
+
+
+        if (mistery===element) {
+            result = true
+            break;
+        } else {
+            result = false
+        }
+    }
+console.log(result)
+    return result
+} 
+
+
+function findUniqueElements(arrayWithDuplicates) {
+const arrayNoDuplicates = []
+    for (let i = 0; i < arrayWithDuplicates.length; i++) {
+        
+       if (!includesElement(arrayNoDuplicates, arrayWithDuplicates[i])) {
+        arrayNoDuplicates.push(arrayWithDuplicates[i])
+       }
+        
+    }
+console.log(arrayNoDuplicates)
+
+    return arrayNoDuplicates
+}
+ findUniqueElements ( [4,9,245,99,4,8,9,245,77,8])
+
