@@ -5,10 +5,13 @@ function isEven(number) {
 
     let result= number % 2
 
-    if (result===0) {let result = 'true'
-    console.log(result)}
-
-    else {let result = 'false'
-    console.log(result)}
+    if (result === 0) {
+        console.log('chetnoye blyat');
+        return true
+    } else {
+        console.log('nechetnoe');
+        return false
+    }
 }
 
+isEven(3);
