@@ -10,6 +10,9 @@ function findLargest(number1, number2, number3) {
  if(biggest<number3){biggest=number3}
 
  
- 
+ console.log (biggest);
     return biggest
+    
 }
+
+findLargest(8,8,8);
