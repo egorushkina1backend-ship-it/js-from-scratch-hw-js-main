@@ -29,10 +29,33 @@ console.log(gallery)
 }
 */
 
+// const gallery = {
+//   'Mona Lisa': 'Leonardo da Vinci',
+//   'Starry Night': 'Vincent van Gogh',
+//   'The Scream': 'Edvard Munch',
+// }
+
+// function updateGallery() {}
 const gallery = {
   'Mona Lisa': 'Leonardo da Vinci',
   'Starry Night': 'Vincent van Gogh',
   'The Scream': 'Edvard Munch',
+};
+
+function updateGallery(gallery, title, value) {
+  gallery[title] = value;
 }
 
-function updateGallery() {}
+// Использование:
+updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506');
+updateGallery(gallery, 'The Persistence of Memory', 'Salvador Dali');
+
+console.log(gallery);
+/* Ожидаемый результат:
+{
+  'Mona Lisa': 'Leonardo da Vinci, 1503-1506',
+  'Starry Night': 'Vincent van Gogh',
+  'The Scream': 'Edvard Munch',
+  'The Persistence of Memory': 'Salvador Dali'
+}
+*/
